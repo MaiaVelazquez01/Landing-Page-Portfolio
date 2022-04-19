@@ -5,10 +5,10 @@
 }
 
 body {
-  background-color: #0582CA;
+  background-color:#0582CA;
 }
 
-.menu {
+.navbar {
   height: 15vh;
   background-color: white;
   display: flex;
@@ -18,13 +18,13 @@ body {
 .opciones {
   list-style-type: none;
   font-family: 'Amaranth', sans-serif;
-  width: 80vw;
+  width: 85%;
   height: 15vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 3vw;
-  gap: 20px;
+  padding-right: 2vw;
+  gap: 25px;
 }
 
 a {
@@ -33,13 +33,15 @@ a {
 }
 
 a:hover {
-  color: #0582CA;
-  text-decoration:underline;
+  color: white;
+  background-color: #0582CA;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-nav img {
-  width: 20vw;
-  height: 14vh;
-  padding-top: 1vh;
-  padding-left: 3vw;
+.navbar img {
+  width: 15%;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 10px;
 }
