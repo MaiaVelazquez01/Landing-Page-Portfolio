@@ -18,7 +18,7 @@ body {
 .opciones {
   list-style-type: none;
   font-family: 'Amaranth', sans-serif;
-  width: 90vw;
+  width: 80vw;
   height: 15vh;
   display: flex;
   align-items: center;
@@ -38,7 +38,8 @@ a:hover {
 }
 
 nav img {
-  width: 10vw;
-  height: 15vh;
+  width: 20vw;
+  height: 14vh;
+  padding-top: 1vh;
   padding-left: 3vw;
 }
