@@ -5,21 +5,64 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo.png">
   <title>Inicio</title>
 </head>
 <body>
-  <div class="navbar">
-    <img src="assets/logo.png" alt="logo de la empresa">
-    <ul class="opciones">
-      <li><a href="index.html">INICIO</a></li>
-      <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
-      <li><a href="destinos.html">NUESTROS DESTINOS</a></li>
-      <li><a href="pregfrec.html">PREGUNTAS FRECUENTES</a></li>
-      <li><a href="contacto.html">CONTACTO</a></li>
-    </ul>
-  </div>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo de la empresa">
+        <h1>Turisteando</h1>
+      </div>
+      <ul class="opciones">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Nuestros destinos</a></li>
+        <li><a href="pregfrec.html">Preguntas Frecuentes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Sección 1 Presentación -->
+  <section class="presentacion">
+    <div class="texto">
+      <h2>¡Porque viajar es vivir!</h2>
+      <br/><br/>
+      <p>Podemos crear tu viaje soñado, desde el más sencillo al más exclusivo, personalizado con el mejor servicio.<br/>Nos especializamos en armar itinerarios y convertir destinos en experiencias memorables.
+      </p>
+      <div class="botones">
+        <a href="destinos.html"><input type="button" id="boton_contacto" value="¡Quiero viajar!"></a>
+        <a href="#elegirnos"><input type="button" id="boton_destinos" value="¿Por qué elegirnos?"></a>
+      </div>
+    </div>
+    <img class="img" src="assets/mapa.webp" alt="Mapa">
+  </section>
+  <!-- Sección 1 terminada -->
+  <!-- Seccion 2 Nosotros-->
+  <section class="nosotros">
+      <h3>Turisteando nace con la necesidad de promover el turismo de Argentina, dando a conocer cada rincón del mismo, sensibilizando al viajero sobre las maravillas con las que contamos. Nuestro objetivo es que Uds. encuentren en nuestras propuestas el servicio esperado, con una buena relación calidad - precio y esmerada atención. Aspiramos a ser reconocidos como agencia confiable que procura una relación perdurable en el tiempo con quienes confían en nosotros.
+      </h3>
+  </section>
+  <!-- Sección 2 terminada -->
+  <!-- Sección 3 Elegirnos -->
+  <section class="elegirnos" id="elegirnos">
+    <h3>¿Por qué elegirnos?</h3>
+    <br/><br/>
+    <div class="card_container">
+      <div class="card">
+        <img src="assets/transportes.png" alt="card Transportes">
+        <p>Como Empresa de Viajes le ofrecemos tours, hoteles, vuelos, ómnibus, excursiones y traslados.</p>
+      </div>
+      <div class="card">
+        <img src="assets/agencia.png" alt="card Agencia de viajes">
+        <p>Nos esforzamos en ofrecer la mejor tarifa del mercado, seleccionando a los mejores operadores turísticos.</p>
+      </div>
+      <div class="card">
+        <img src="assets/calidad.png" alt="card Calidad">
+        <p>Nuestros valores son la calidez, transparencia, calidad y por sobre todas las cosas el compromiso.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Sección 3 terminada-->
 </body>
 </html>

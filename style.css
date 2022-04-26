@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@500&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -8,40 +10,164 @@ body {
   background-color:#0582CA;
 }
 
-.navbar {
+header {
+  position: sticky;
+  top: 0px;
+}
+
+nav {
   height: 15vh;
+  width: 100%;
   background-color: white;
   display: flex;
   box-shadow: 1px 5px 20px #003554;
 }
 
 .opciones {
-  list-style-type: none;
-  font-family: 'Amaranth', sans-serif;
-  width: 85%;
-  height: 15vh;
+  font-family: 'Montserrat';
+  list-style: none;
+  text-transform: uppercase;
+  width: 80%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 2vw;
-  gap: 25px;
+  justify-content: space-between;
+  margin-right: 3rem;
+  margin-left: 15rem;
+  font-size: 1rem;
 }
 
-a {
+.opciones a {
   text-decoration: none;
   color:black;
 }
 
-a:hover {
+.opciones a:hover {
   color: white;
   background-color: #0582CA;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 5px;
+  padding: 8px;
 }
 
-.navbar img {
-  width: 15%;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  margin-left: 10px;
+.logo {
+  display: flex;
+  align-items: left;
+  width: 20%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.logo h1 {
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-family: 'Indie Flower';
+}
+
+.presentacion {
+  padding: 2rem 1rem 3rem;
+  display: flex;
+  height: 90vh;
+}
+
+.texto {
+  background-color: white;
+  width: 40%;
+  padding: 4rem 2rem;
+}
+
+.texto h2 {
+  font-family: 'Indie Flower';
+  font-size: 3rem;
+  height: 20%;
+}
+
+.texto p {
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  height: 60%;
+}
+
+.botones input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  border: 2px solid #003554;
+  font-family: 'Montserrat';
+}
+
+#boton_contacto {
+  color: white;
+  background-color: #003554;
+}
+
+#boton_destinos {
+  color: black;
+  background-color: white;
+}
+
+#boton_contacto:hover, #boton_destinos:hover {
+  box-shadow: 1px 2px 10px #003554;
+}
+
+.img {
+  display: flex;
+  width: 60%;
+}
+
+.nosotros {
+  margin: 0rem 4rem 2rem;
+  padding: 3rem 5rem;
+  height: 30vh;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  font-family: 'Montserrat';
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.elegirnos {
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.elegirnos h3 {
+  height: 20%;
+  font-family: 'Indie Flower';
+  color: white;
+  font-size: 3rem;
+}
+
+.elegirnos p {
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.card_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.elegirnos img {
+  height: 200px;
+}
+
+.card {
+  padding: 2rem 5rem;
+  margin: 0.2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
