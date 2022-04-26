@@ -7,7 +7,9 @@
 }
 
 body {
-  background-color:#0582CA;
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header {
@@ -122,7 +124,7 @@ nav {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   font-family: 'Montserrat';
-  color: white;
+  color: rgba(255, 255, 255, 0.938);
   font-size: 1rem;
   text-align: center;
   display: flex;
