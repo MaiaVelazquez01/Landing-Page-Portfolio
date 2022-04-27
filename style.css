@@ -13,69 +13,109 @@
   box-sizing: border-box;
 }
 
+* img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 body {
+  width: 100vw;
+  max-width: 100%;
+  max-height: 100%;
   background: #00B4DB;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+main {
+  width: 100%;
+  height: 100%;
+}
+
 header {
   position: sticky;
   top: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 nav {
-  height: 15vh;
   width: 100%;
   background-color: white;
-  display: flex;
+  padding: 0.5rem 1rem;
   box-shadow: 1px 5px 20px #003554;
 }
 
-.opciones {
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu i {
+  font-size: 2rem;
+  color: #0083B0;
+}
+
+.container-items {
+  order: 1;
+  width: 100%;
+}
+
+.item {
   font-family: 'Montserrat';
   font-weight: var(--bold);
-  list-style: none;
+  width: 100%;
+  text-align: center;
   text-transform: uppercase;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 3rem;
-  margin-left: 15rem;
+  padding: 0.5rem;
+  display: none;
 }
 
-.opciones a {
+.item a {
   text-decoration: none;
-  color:black;
+  color: #003554;
 }
 
-.opciones a:hover {
-  color: white;
-  background-color: #0582CA;
-  border-radius: 5px;
-  padding: 8px;
+.item a:hover {
+  color:#0083B0;
 }
 
-.logo {
-  display: flex;
-  align-items: left;
-  width: 20%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
+.menu .logo {
+  width: 3rem;
 }
 
+.desplegable {
+  display: none;
+}
+
+/* Corregir */
+.desplegable:checked + .item {
+  display: block;
+}
+
+/* Sección 1 Presentación */
+.presentacion img {
+  display: none;
+}
 .presentacion {
-  padding: 2rem 1rem 3rem;
-  display: flex;
-  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.938);
+  margin: 2rem 1rem 3rem;
+  padding: 2rem 2rem 3rem;
 }
 
 .texto {
-  background-color: rgba(255, 255, 255, 0.938);;
-  width: 40%;
-  padding: 4rem 2rem;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .texto h1 {
@@ -88,10 +128,6 @@ nav {
 .texto p {
   font-family: 'Montserrat';
   font-weight: var(--medium);
-  height: 60%;
-  padding-top: 1.5rem;
-  padding-right: 4rem;
-  padding: 1.5rem 4rem 0rem 0.5rem;
 }
 
 .botones input {
@@ -117,26 +153,90 @@ nav {
   box-shadow: 1px 2px 10px #003554;
 }
 
-.img {
-  display: flex;
-  width: 60%;
-}
-
+/* Sección 2 Nosotros */
 .nosotros {
-  margin: 0rem 4rem 2rem;
-  padding: 3rem;
-  height: 30vh;
+  margin: 0rem 3rem 2rem;
+  padding: 2rem 2rem;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   font-family: 'Montserrat';
   font-weight: var(--medium);
   color: rgba(255, 255, 255, 0.938);
-  text-align: center;
+  text-align: justify;
   display: flex;
   align-items: center;
 }
 
-.elegirnos {
+.nosotros span {
+  font-style:oblique;
+  color:#003554;
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .item {
+    display: flex;
+    cursor: pointer;
+    width: auto;
+    padding: 20px;
+  }
+
+  .btn__container {
+    display: none;
+  }
+
+  .container-items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1200px;
+  }
+
+  .menu i {
+    font-size: 1.7rem;
+  }
+
+  /* Seccion 2 Presentación */
+  .presentacion img {
+    display: inline;
+    width: 60%;
+  }
+  .presentacion {
+    display: flex;
+    padding: 0;
+    height: 80vh;
+  }
+
+  .box-info {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+
+  .texto {
+    padding-bottom: 0rem;
+  }
+
+  .box-info p {
+    padding: 2rem 4rem 0rem 1rem;
+  }
+
+  /* Seccion 3 Nosotros */
+  .nosotros {
+  margin: 0rem 3rem 2rem;
+  padding: 3rem 2rem;
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+}
+
+/* .elegirnos {
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
@@ -177,4 +277,4 @@ nav {
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.938);
-}
+} */

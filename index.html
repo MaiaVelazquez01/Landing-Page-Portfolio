@@ -4,47 +4,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/logo.png">
-  <title>Inicio</title>
+  <title>Inicio - Turisteando</title>
 </head>
 <body>
   <header>
     <nav>
-      <div class="logo">
-        <img src="assets/logo.png" alt="Logo de la empresa">
-      </div>
-      <ul class="opciones">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="destinos.html">Nuestros destinos</a></li>
-        <li><a href="pregfrec.html">Preguntas Frecuentes</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+      <ul class="menu">
+        <li><a href="index.html" class="logo-link"><img class="logo" src="assets/logo.png" alt="Logo de la empresa"></a></li>
+        <div class="container-items">
+          <li class="item"><a href="index.html">Inicio</a></li>
+          <li class="item"><a href="destinos.html">Nuestros destinos</a></li>
+          <li class="item"><a href="pregfrec.html">Preguntas Frecuentes</a></li>
+          <li class="item"><a href="contacto.html">Contacto</a></li>
+        </div>
+        <div class="btn__container">
+          <label for="desplegable"><i class="fa-solid fa-bars"></i></label>
+        </div>
       </ul>
+      <input type="checkbox" id="desplegable" class="desplegable">
     </nav>
   </header>
-  <!-- Sección 1 Presentación -->
-  <section class="presentacion">
-    <div class="texto">
-      <h1>Turisteando</h1>
-      <br/><br/>
-      <p>Podemos crear tu viaje soñado, desde el más sencillo al más exclusivo, personalizado con el mejor servicio.<br/><br/>Nos especializamos en armar itinerarios y convertir destinos en experiencias memorables.
-      </p>
-      <div class="botones">
-        <a href="destinos.html"><input type="button" id="boton_contacto" value="¡Quiero viajar!"></a>
-        <a href="#elegirnos"><input type="button" id="boton_destinos" value="¿Por qué elegirnos?"></a>
+  <main>
+    <!-- Sección 1 Presentación -->
+    <section class="presentacion">
+      <div class="box-info">
+        <div class="texto">
+          <h1>Turisteando</h1>
+          <br/><br/>
+          <p>Podemos crear tu viaje soñado, desde el más sencillo al más exclusivo, personalizado con el mejor servicio.<br/><br/>Nos especializamos en armar itinerarios y convertir destinos en experiencias memorables.
+          </p>
+        </div>
+        <div class="botones">
+          <input type="button" id="boton_contacto" value="¡Quiero viajar!"></a>
+          <input type="button" id="boton_destinos" value="¿Por qué elegirnos?"></a>
+        </div>
       </div>
-    </div>
-    <img class="img" src="assets/mapa.webp" alt="Mapa">
-  </section>
-  <!-- Sección 1 terminada -->
-  <!-- Seccion 2 Nosotros-->
-  <section class="nosotros">
-      <p>Turisteando nace con la necesidad de promover el turismo de Argentina, dando a conocer cada rincón del mismo, sensibilizando al viajero sobre las maravillas con las que contamos. Nuestro objetivo es que Uds. encuentren en nuestras propuestas el servicio esperado, con una buena relación calidad - precio y esmerada atención. Aspiramos a ser reconocidos como agencia confiable que procura una relación perdurable en el tiempo con quienes confían en nosotros.
+      <img class="img" src="assets/mapa.webp" alt="Mapa">
+    </section>
+    <!-- Sección 1 terminada -->
+    <!-- Seccion 2 Nosotros-->
+    <section class="nosotros">
+      <p>Turisteando nace con la necesidad de promover el turismo de Argentina, dando a conocer cada rincón del mismo, <span>sensibilizando al viajero</span> sobre las maravillas con las que contamos.<br/><br/>Aspiramos a ser reconocidos como agencia confiable que procura una <span>relación perdurable en el tiempo</span> con quienes confían en nosotros.
       </p>
-  </section>
+    </section>
   <!-- Sección 2 terminada -->
   <!-- Sección 3 Elegirnos -->
-  <section class="elegirnos" id="elegirnos">
+  <!-- <section class="elegirnos" id="elegirnos">
     <h3>¿Por qué elegirnos?</h3>
     <br/><br/>
     <div class="card_container">
@@ -61,7 +69,7 @@
         <p>Nuestros valores son la calidez, transparencia, calidad y por sobre todas las cosas el compromiso.</p>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Sección 3 terminada-->
 </body>
 </html>
