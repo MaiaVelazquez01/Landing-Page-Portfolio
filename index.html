@@ -14,17 +14,15 @@
     <nav>
       <ul class="menu">
         <li><a href="index.html" class="logo-link"><img class="logo" src="assets/logo.png" alt="Logo de la empresa"></a></li>
-        <div class="container-items">
+        <label for="desplegable"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="desplegable" class="desplegable">
+        <ul class="container-items">
           <li class="item"><a href="index.html">Inicio</a></li>
           <li class="item"><a href="destinos.html">Nuestros destinos</a></li>
           <li class="item"><a href="pregfrec.html">Preguntas Frecuentes</a></li>
           <li class="item"><a href="contacto.html">Contacto</a></li>
-        </div>
-        <div class="btn__container">
-          <label for="desplegable"><i class="fa-solid fa-bars"></i></label>
-        </div>
+        </ul>
       </ul>
-      <input type="checkbox" id="desplegable" class="desplegable">
     </nav>
   </header>
   <main>
@@ -38,8 +36,8 @@
           </p>
         </div>
         <div class="botones">
-          <input type="button" id="boton_contacto" value="¡Quiero viajar!"></a>
-          <input type="button" id="boton_destinos" value="¿Por qué elegirnos?"></a>
+          <a href="#elegirnos"><input type="button" id="boton_elegirnos" value="¿Por qué elegirnos?"></a>
+          <a href="#trabajamos"><input type="button" id="boton_trabajamos" value="¿Cómo trabajamos?"></a>
         </div>
       </div>
       <img class="img" src="assets/mapa.webp" alt="Mapa">
@@ -47,29 +45,54 @@
     <!-- Sección 1 terminada -->
     <!-- Seccion 2 Nosotros-->
     <section class="nosotros">
-      <p>Turisteando nace con la necesidad de promover el turismo de Argentina, dando a conocer cada rincón del mismo, <span>sensibilizando al viajero</span> sobre las maravillas con las que contamos.<br/><br/>Aspiramos a ser reconocidos como agencia confiable que procura una <span>relación perdurable en el tiempo</span> con quienes confían en nosotros.
+      <p>Turisteando nace con la necesidad de promover el turismo de Argentina, dando a conocer cada rincón del mismo, <span>sensibilizando al viajero</span> sobre las maravillas con las que contamos.<!-- <br/><br/> --> Aspiramos a ser reconocidos como agencia confiable que procura una <span>relación perdurable en el tiempo</span> con quienes confían en nosotros.
       </p>
     </section>
   <!-- Sección 2 terminada -->
   <!-- Sección 3 Elegirnos -->
-  <!-- <section class="elegirnos" id="elegirnos">
+  <section class="elegirnos" id="elegirnos">
     <h3>¿Por qué elegirnos?</h3>
     <br/><br/>
     <div class="card_container">
-      <div class="card">
+      <div class="card_elegirnos">
         <img src="assets/transportes.png" alt="card Transportes">
         <p>Como Empresa de Viajes le ofrecemos tours, hoteles, vuelos, ómnibus, excursiones y traslados.</p>
       </div>
-      <div class="card">
+      <div class="card_elegirnos">
         <img src="assets/agencia.png" alt="card Agencia de viajes">
         <p>Nos esforzamos en ofrecer la mejor tarifa del mercado, seleccionando a los mejores operadores turísticos.</p>
       </div>
-      <div class="card">
+      <div class="card_elegirnos">
         <img src="assets/calidad.png" alt="card Calidad">
         <p>Nuestros valores son la calidez, transparencia, calidad y por sobre todas las cosas el compromiso.</p>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- Sección 3 terminada-->
+  <!-- Sección 4 Trabajamos -->
+  <section class="trabajamos" id="trabajamos">
+    <h3>¿Cómo trabajamos?</h3>
+    <br/><br/>
+    <div class="card_container">
+      <div class="card_trabajamos">
+        <img src="assets/conociendo.png" alt="card Conociendo al cliente">
+        <p>Hablamos con nuestros clientes, escuchamos sus gustos y pasiones y, en base a esto, asesoramos sobre el viaje.</p>
+      </div>
+      <div class="card_trabajamos">
+        <img src="assets/aconsejando.png" alt="card Aconsejando al cliente">
+        <p>Aconsejamos prácticas que hacen la experiencia de nuestros clientes mucho más bonita y enriquecedora.</p>
+      </div>
+      <div class="card_trabajamos">
+        <img src="assets/ruta.png" alt="card Ruta de viaje">
+        <p>Establecemos una ruta de viaje y planificamos un itinerario de actividades para realizar en el lugar de destino.</p>
+      </div>
+      <div class="card_trabajamos">
+        <img src="assets/vinculo.png" alt="card Vinculo con el cliente">
+        <p>Apostamos a que no sólo nuestros clientes conozcan nuevos lugares sino también a generar un vínculo con ellos.</p>
+      </div>
+    </div>
+  </section>
+  </main>
+  <!-- Sección 4 terminada -->
 </body>
 </html>
