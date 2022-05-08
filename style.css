@@ -35,7 +35,7 @@ body {
   background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-main, footer {
+main /* footer */ {
   width: 100%;
   height: 100%;
 }
@@ -125,8 +125,8 @@ label {
 }
 
 .texto {
-  padding-bottom: 4rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem; /* 4 */
+  margin-bottom: 1rem; /* 2 */
 }
 
 .texto h1 {
@@ -327,15 +327,16 @@ footer a {
   margin-right: 10px;
   }
 
-  .card_container {
-    align-items:initial;
-  }
-  .card_elegirnos {
-    height: 40vh;
+  .text-card {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
-  .numero p {
-    padding-left: 30px;
+  .card_container {
+    align-items: center;
+  }
+  .card_elegirnos {
+    height: 50vh;
   }
 }
 
@@ -343,11 +344,26 @@ footer a {
   .card_container {
     flex-direction: row;
     gap: 1.2rem;
+    align-items: initial;
+  }
+
+  .card_elegirnos {
+    height: 40vh;
   }
 
   .numero {
     width: 75px;
     height: 75px;
+  }
+
+  .numero p {
+    padding: 27px;
+  }
+
+  .clientes_logos {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -384,6 +400,14 @@ footer a {
     display: inline;
     width: 55%;
   } 
+
+  footer img {
+    display: inline;
+    align-items: center;
+    height: 215px;
+    width: 260px;
+  }
+
   .presentacion {
     display: flex;
     padding: 0;
@@ -417,6 +441,11 @@ footer a {
   }
 
   /* Sección 3 Elegirnos */
+  .text-card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .card_container {
     flex-direction: row;
     gap: 1.5rem;
@@ -430,6 +459,25 @@ footer a {
   /* Sección 4 Trabajamos */
   .card_trabajamos {
     padding: 2rem 2rem;
+  }
+
+  .clientes_logos {
+    padding-bottom: 2.5rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+  }
+
+  footer .box-info p {
+    padding: 0rem;
+  }
+
+  footer .box-info {
+    width: 60%;
+    align-items: center;
   }
 }
 
@@ -454,5 +502,10 @@ footer a {
   .card_elegirnos {
     height: 60vh;
     width: 25%;
+  }
+
+  footer {
+    height: 70vh;
+    padding-bottom: 5rem;
   }
 }
