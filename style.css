@@ -35,7 +35,7 @@ body {
   background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-main {
+main, footer {
   width: 100%;
   height: 100%;
 }
@@ -61,7 +61,7 @@ nav {
   flex-wrap: wrap;
 }
 
-/* @media (min-width: 320px) {*/
+@media (min-width: 320px) {
   .menu i {
   font-size: 2rem;
   color: #0083B0;
@@ -112,7 +112,7 @@ label {
 }
 
 /* Sección 1 Presentación */
-.presentacion img {
+.presentacion img, footer img {
   display: none;
 }
 
@@ -143,7 +143,6 @@ label {
 
 .botones input {
   padding: 10px;
-  /* margin-right: 10px; */
   margin-bottom: 15px;
   border-radius: 20px;
   border: 2px solid #003554;
@@ -167,9 +166,7 @@ label {
 
 /* Sección 2 Nosotros */
 .nosotros {
-  /* margin: 5rem 3rem; */
   margin: 5rem 1.5rem;
-  /* padding: 2rem 2rem; */
   padding: 2rem 1rem;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
@@ -198,10 +195,8 @@ label {
 .elegirnos h3 {
   font-family: 'Montserrat';
   color: #0083B0;
-  /* font-size: 2rem; */
   font-size: 1.6rem;
-  margin: 2.5rem 0rem 1rem;
-  /* padding-top: 2rem; */
+  margin: 2.5rem 0rem 2rem;
 }
 
 .text-card {
@@ -237,15 +232,14 @@ label {
 
 /* Sección 4 Trabajamos */
 
-.trabajamos {
-  padding: 3rem 1rem 0rem;
+.trabajamos, .clientes, footer {
+  padding: 3rem 1rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #0083B0;
 }
 
-.trabajamos h3 {
+.trabajamos h3, .clientes h3, footer h3 {
   font-family: 'Montserrat';
   color: rgba(255, 255, 255, 0.938);
   font-size: 1.6rem;
@@ -254,11 +248,10 @@ label {
 
 .card_trabajamos {
   padding: 2rem 0rem;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: rgba(255, 255, 255, 0.938); */
 }
 
 .numero {
@@ -276,7 +269,50 @@ label {
   font-size: 2rem;
   padding-left: 40px;
 }
-/* } */
+
+/* Sección 5 Clientes */
+.clientes {
+  background-color: rgba(255, 255, 255, 0.938);
+}
+
+.clientes h3 {
+  color: black;
+}
+
+.clientes_logos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.clientes img {
+  width: 200px;
+  height: 60px;
+}
+
+footer {
+  background-color: #003554;
+  font-family: 'Montserrat';
+  font-weight: var(--thin);
+  color: rgba(255, 255, 255, 0.938);
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer a {
+  font-family: 'Montserrat';
+  font-weight: var(--thin);
+  color: rgba(255, 255, 255, 0.938);
+  padding: 1rem 1rem;
+  
+}
+
+.social-media i{
+  margin: 0rem 1rem;
+  margin-top: 2rem;
+}
+}
 
 @media (min-width: 481px) {
   .texto h1 {
@@ -295,7 +331,6 @@ label {
     align-items:initial;
   }
   .card_elegirnos {
-    /* width: 80%; */
     height: 40vh;
   }
 
@@ -352,7 +387,7 @@ label {
   .presentacion {
     display: flex;
     padding: 0;
-    height: 80vh;
+    height: 40vh;
   }
 
   .box-info {
@@ -374,8 +409,8 @@ label {
   /* Seccion 2 Nosotros */
   .nosotros {
   margin: 4rem 3rem 4rem;
-  padding: 3rem 2rem;
-  height: 30vh;
+  padding: 0rem 2rem;
+  height: 15vh;
   text-align: center;
   display: flex;
   align-items: center;
@@ -388,12 +423,36 @@ label {
   }
 
   .card_elegirnos {
-    height: 60vh;
-    width: 25%;
+    height: 30vh;
+    width: 30%;
   }
 
   /* Sección 4 Trabajamos */
   .card_trabajamos {
     padding: 2rem 2rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .presentacion {
+    height: 80vh;
+  }
+
+  .nosotros {
+  margin: 4rem 3rem 4rem;
+  padding: 3rem 2rem;
+  height: 30vh;
+  }
+
+  .elegirnos, .trabajamos {
+    padding: 3rem 2rem;
+  }
+
+  .card_container {
+    gap: 60px;
+  }
+  .card_elegirnos {
+    height: 60vh;
+    width: 25%;
   }
 }
