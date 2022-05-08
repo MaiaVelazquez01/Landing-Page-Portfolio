@@ -61,18 +61,19 @@ nav {
   flex-wrap: wrap;
 }
 
-.menu i {
+/* @media (min-width: 320px) {*/
+  .menu i {
   font-size: 2rem;
   color: #0083B0;
 }
 
-.container-items {
+  .container-items {
   order: 1;
   width: 100%;
   display: none;
 }
 
-.item {
+  .item {
   font-family: 'Montserrat';
   font-weight: var(--bold);
   width: 100%;
@@ -131,18 +132,19 @@ label {
 .texto h1 {
   font-family: 'Indie Flower';
   height: 20%;
-  font-size: 4rem;
+  font-size: 2.7rem;
   color: #003554;
 }
 
 .texto p {
   font-family: 'Montserrat';
-  font-weight: var(--medium);
+  font-weight: var(--regular);
 }
 
 .botones input {
   padding: 10px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
+  margin-bottom: 15px;
   border-radius: 20px;
   border: 2px solid #003554;
   font-family: 'Montserrat';
@@ -165,8 +167,10 @@ label {
 
 /* Sección 2 Nosotros */
 .nosotros {
-  margin: 5rem 3rem;
-  padding: 2rem 2rem;
+  /* margin: 5rem 3rem; */
+  margin: 5rem 1.5rem;
+  /* padding: 2rem 2rem; */
+  padding: 2rem 1rem;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   font-family: 'Montserrat';
@@ -194,17 +198,20 @@ label {
 .elegirnos h3 {
   font-family: 'Montserrat';
   color: #0083B0;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 1.6rem;
   margin: 2.5rem 0rem 1rem;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 
-.elegirnos p {
+.text-card {
   font-family: 'Montserrat';
   font-weight: var(--regular);
   text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 2rem;
-  color: rgba(255, 255, 255, 0.938);
+  color: black;
 }
 
 .card_container {
@@ -215,7 +222,7 @@ label {
 }
 
 .card_elegirnos {
-  padding: 2rem 5rem;
+  padding: 2rem 0rem;
   margin-bottom: 2rem;
   border-radius: 20px;
   width: 90%;
@@ -241,33 +248,75 @@ label {
 .trabajamos h3 {
   font-family: 'Montserrat';
   color: rgba(255, 255, 255, 0.938);
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 2.5rem 0rem 1rem;
 }
 
-.trabajamos p {
-  font-family: 'Montserrat';
-  font-weight: var(--regular);
-  text-align: center;
-  padding-top: 2rem;
-  color:#0083B0;
-  color: black;
-}
-
 .card_trabajamos {
-  padding: 2rem 5rem;
+  padding: 2rem 0rem;
   margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   /* background-color: rgba(255, 255, 255, 0.938); */
 }
 
-.numero p{
-  color: rgba(255, 255, 255, 0.938);
-  font-size: 5rem;
+.numero {
+  background-color: #003554;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
 }
 
-@media (min-width: 1024px) {
+.numero p{
+  font-family: 'Montserrat';
+  color: rgba(255, 255, 255, 0.938);
+  font-size: 2rem;
+  padding-left: 40px;
+}
+/* } */
+
+@media (min-width: 481px) {
+  .texto h1 {
+    font-size: 4rem;
+  }
+
+  .texto p {
+    font-weight: var(--medium);
+  }
+
+  .botones input {
+  margin-right: 10px;
+  }
+
+  .card_container {
+    align-items:initial;
+  }
+  .card_elegirnos {
+    /* width: 80%; */
+    height: 40vh;
+  }
+
+  .numero p {
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  .card_container {
+    flex-direction: row;
+    gap: 1.2rem;
+  }
+
+  .numero {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (min-width: 1025px) {
   .menu {
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -336,6 +385,11 @@ label {
   .card_container {
     flex-direction: row;
     gap: 1.5rem;
+  }
+
+  .card_elegirnos {
+    height: 60vh;
+    width: 25%;
   }
 
   /* Sección 4 Trabajamos */
