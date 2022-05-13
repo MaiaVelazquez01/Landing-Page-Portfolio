@@ -362,7 +362,9 @@ footer i {
 
   .card_elegirnos {
     height: 40vh;
-    width: 31%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0rem;
   }
 
   .numero {
