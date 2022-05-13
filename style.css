@@ -356,7 +356,6 @@ footer i {
 @media (min-width: 769px) {
   .card_container {
     flex-direction: row;
-    gap: 1.2rem;
     align-items: initial;
   }
 
@@ -494,6 +493,11 @@ footer i {
   footer .box-info {
     width: 60%;
     align-items: center;
+    padding-bottom: 0rem;
+  }
+
+  .social-media {
+    margin:0rem;
   }
 
   .social-media a{
@@ -504,13 +508,13 @@ footer i {
 
 @media (min-width: 1201px) {
   .presentacion {
-    height: 80vh;
+    height: 60vh;
   }
 
   .nosotros {
-  margin: 4rem 3rem 4rem;
-  padding: 3rem 2rem;
-  height: 30vh;
+    margin: 2.5rem 3rem;
+    padding: 2rem 2rem;
+    height: 20vh;
   }
 
   .elegirnos, .trabajamos {
@@ -521,12 +525,16 @@ footer i {
     gap: 60px;
   }
   .card_elegirnos {
-    height: 60vh;
-    width: 25%;
+    height: 35vh;
+    width: 30%;
   }
 
   footer {
-    height: 70vh;
+    height: 50vh;
     padding-bottom: 5rem;
+  }
+
+  footer .box-info {
+    padding: 0rem;
   }
 }
